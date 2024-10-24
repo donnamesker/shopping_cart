@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col" class="text-center">Quantity</th>
+                <th scope="col" class="text-right">Price</th>
+                <th scope="col" class="text-right">Amount</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="item">Salmon</td>
+                <td class="text-center quantity">QTY <input class="text-center" type="number" value="1" /></td>
+                <td class="text-right price"><input class="text-right" type="number" value="60.00" /></td>
+                <td class="text-right amount"></td>
+                <td class="action text-center"><button type="button" class="btn btn-danger">Remove</button></td>
+              </tr>
+              <tr>
+                <td class="item">Tuna</td>
+                <td class="text-center quantity">QTY <input class="text-center" type="number" value="1" /></td>
+                <td class="text-right price"><input class="text-right" type="number" value="50.00" /></td>
+                <td class="text-right amount"></td>
+                <td class="action text-center"><button type="button" class="btn btn-danger">Remove</button></td>
+              </tr>
+              <tr>
+                <td class="item">Carp</td>
+                <td class="text-center quantity">QTY <input class="text-center" type="number" value="1" /></td>
+                <td class="text-right price"><input class="text-right" type="number" value="40.00" /></td>
+                <td class="text-right amount"></td>
+                <td class="action text-center"><button type="button" class="btn btn-danger">Remove</button></td>
+              </tr>
+              <tr>
+                <td class="item">Pork</td>
+                <td class="text-center quantity">QTY <input class="text-center" type="number" value="1" /></td>
+                <td class="text-right price"><input class="text-right" type="number" value="50.00" /></td>
+                <td class="text-right amount"></td>
+                <td class="action text-center"><button type="button" class="btn btn-danger">Remove</button></td>
+              </tr>
+              <tr>
+                <td class="item">Beef</td>
+                <td class="text-center quantity">QTY <input class="text-center" type="number" value="1" /></td>
+                <td class="text-right price"><input class="text-right" type="number" value="40.00" /></td>
+                <td class="text-right amount"></td>
+                <td class="action text-center"><button type="button" class="btn btn-danger">Remove</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Total: $<span id="totalCart"></span></h1>
+        </div>
+      </div>
+      <div class="row">
+          <form class="col-12 col-md-7 col-lg-6 mt-2 mb-4" id="addItem">
+            <h3 class="formHead">Add Item</h3>
+                <input class="mx-2" name="name" type="text" placeholder="Name" required/>
+                <input class="mx-2" name="quantity" type="number" step=".01" placeholder="Quantity"/>
+                <input class="mx-2" name="price" type="number" step=".01" placeholder="Price"/>
+                <button class="btn btn-success btn-sm">Add</button>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
