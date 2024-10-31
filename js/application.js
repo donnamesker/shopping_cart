@@ -41,7 +41,6 @@ var updateAmountsAndTotal = function () {
   if (allAmounts.length) {
     var totalCart = allAmounts.reduce(sum).toFixed(2);
   } else {
-<<<<<<< HEAD
     var totalCart = "0.00";
   }
   
