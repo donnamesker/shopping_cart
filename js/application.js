@@ -38,7 +38,11 @@ var updateAmountsAndTotal = function () {
     var itemUpdateAmount = updateAmount(ele);
     allAmounts.push(itemUpdateAmount);
   });
-  var totalCart = allAmounts.reduce(sum).toFixed(2);
+  if (allAmounts.length) {
+    var totalCart = allAmounts.reduce(sum).toFixed(2);
+  } else {
+      var totalCart = "0.00";
+  }
   $('#totalCart').html(totalCart);
 }
 
