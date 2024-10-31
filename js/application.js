@@ -44,15 +44,8 @@ var updateAmountsAndTotal = function () {
     var totalCart = "0.00";
   }
   
-=======
-      var totalCart = "0.00";
-  }
->>>>>>> refs/remotes/origin/main
   $('#totalCart').html(totalCart);
-  
 }
-
-
 
 // Allow user to delete an item
 
